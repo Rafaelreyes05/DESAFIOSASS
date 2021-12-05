@@ -130,32 +130,36 @@ footer{
         flex-wrap: wrap;
         color: white;
         min-height: 40vh;
+        .footer__info{
+            width: 25%;
+            padding: 30px;
+            padding-top: 45px;
+            text-align: left;
+            h4{
+                font-size: 16px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 200;
+            }
+        }
     }
     
-    .footer__info{
-        width: 25%;
-        padding: 30px;
-        padding-top: 45px;
-        text-align: left;
-        font-size: 14px;
-        font-weight: 300;
-        h4{
-            text-align: left;
-            font-size: 16px;
-            font-weight: 300;
-        }
-        p{
-            text-align: left;
-            font-size: 16px;
-            font-weight: 300;
-        }
-    }
+    
     ul{
         padding: 0px;
     }
     .iconos{
         font-size: 30px;
     }
+}
+
+@if $var==True{
+    $color:rgb(0,120,196);
+}
+@else{
+    $color:rgb(70, 196, 70);
 }
 
 @import "index";
@@ -170,7 +174,6 @@ footer{
        align-items: center;
    }
 
-
    .icono_menu i{
        display:block;
    }
@@ -179,15 +182,11 @@ footer{
        color: $color;
    }
 
+  
    .footer__info{
-       width: 100%;
-   }
+        width: 100%;
+    }
 
- }
+}
 
-@if $var==True{
-    $color:rgb(0,120,196);
-}
-@else{
-    $color:rgb(70, 196, 70);
-}
+
