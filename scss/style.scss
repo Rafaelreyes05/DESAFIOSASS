@@ -1,6 +1,19 @@
 $color:rgb(0,120,196);
-$fondo:#EBEBEB;
+$fondo:hsl(0, 0%, 92%);
 $var:True;
+
+@mixin medidas ($fontsize,$fontweight) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
+
+@if $var==True{
+    $color:rgb(0,120,196);
+}
+@else{
+    $color:rgb(70, 196, 70);
+}
+
 
 *{
     margin: 0px;
@@ -133,12 +146,10 @@ footer{
             padding-top: 45px;
             text-align: center;
             h4{
-                font-size: 16px;
-                font-weight: 600;
+                @include medidas(16px,600)
             }
             p{
-                font-size: 14px;
-                font-weight: 200;
+                @include medidas(14px,200)
             }
         }
     }
@@ -152,12 +163,7 @@ footer{
     }
 }
 
-@if $var==True{
-    $color:rgb(0,120,196);
-}
-@else{
-    $color:rgb(70, 196, 70);
-}
+
 
 @import "index";
 @import "about";

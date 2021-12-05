@@ -34,7 +34,7 @@ a {
 .container-grid {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   color: black;
   position: relative;
 }
