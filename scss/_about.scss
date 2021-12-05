@@ -1,0 +1,19 @@
+/***********************************
+            ABOUT.HTML
+ ***********************************/
+ .about__titulo{
+    min-height: 30vh;
+    background:$color;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.about__texto{
+    min-height: 40vh;
+    padding: 20px;
+    font-size: 30px;
+    text-align: justify;
+}

@@ -1,0 +1,186 @@
+$color:rgb(0,120,196);
+$fondo:#EBEBEB;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+/***********************************
+            GENERALES 
+ ***********************************/
+.button{
+    padding: 10px;
+    font-size: 1em;
+    background-color: $color;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/***********************************
+            BODY 
+ ***********************************/
+
+.container-grid{
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    background-color:$fondo;
+    color: black;
+    position: relative;
+}
+
+
+/***********************************
+            HEADER 
+ ***********************************/
+
+header{
+    grid-area: header;
+
+}
+
+/*Menu  Navigation*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    position:relative ;
+}
+
+.menu__opcion{
+    text-align: center;
+    padding: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 20%;
+    a:hover{
+        color: $color;
+    }
+}
+
+.active{
+  color:$color;
+}
+
+.icono_menu{
+    width: 100%;
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    i{
+        display: none;
+    }
+}
+
+
+/*Logo*/
+.logo {
+    a{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        img{
+            width:350px;
+            height:auto;
+        }
+    }
+}
+
+/***********************************
+            FOOTER
+ ***********************************/
+footer{
+    grid-area: footer;
+    text-align: center;
+    min-height: 100vh;
+    .footer__superior{
+        min-height: 60vh;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .texto_superior h2{
+            font-size: 30px;
+            }
+    }
+    
+    .footer__inferior{
+        background: $color;
+        display: flex;
+        flex-wrap: wrap;
+        color: white;
+        min-height: 40vh;
+    }
+    
+    .footer__info{
+        width: 25%;
+        padding: 30px;
+        padding-top: 45px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 300;
+        h4{
+            text-align: left;
+            font-size: 16px;
+            font-weight: 300;
+        }
+        p{
+            text-align: left;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    }
+    ul{
+        padding: 0px;
+    }
+    .iconos{
+        font-size: 30px;
+    }
+}
+
+@import "index";
+@import "about";
+@import "ciudades";
+@import "contacto";
+@import "tours";
+
+@media screen and (max-width:800px){
+    .menu{
+       flex-direction: column;
+       align-items: center;
+   }
+
+
+   .icono_menu i{
+       display:block;
+   }
+
+   .icono_menu:hover{
+       color: $color;
+   }
+
+   .footer__info{
+       width: 100%;
+   }
+
+ }
+

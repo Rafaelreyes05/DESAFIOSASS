@@ -1,0 +1,12 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch scss/style.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

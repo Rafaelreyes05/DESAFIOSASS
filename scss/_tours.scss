@@ -1,0 +1,58 @@
+/***********************************
+            TOURS.HTML 
+ ***********************************/
+ .tours__html{
+    min-height: 180vh;
+    display: flex;  
+}
+
+.card2{
+    min-height: 80vh;
+    width: 100%;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Encode Sans', sans-serif;
+    position: relative;
+    img{
+        height: 80%;
+        object-fit: cover;
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    .button_reservar{
+        height: auto;
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+}
+  
+.card2:hover .button_reservar {
+    opacity: 1;
+  }
+
+.text_reservar{
+    background-color: $color;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.card2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    img {
+        opacity: 0.3;
+    }
+  }
+
