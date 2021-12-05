@@ -1,5 +1,15 @@
 $color:rgb(0,120,196);
 $fondo:#EBEBEB;
+$var:True;
+
+@if $var==True{
+    $color:rgb(0,120,196);
+}
+@else{
+    $color:rgb(70, 196, 70);
+}
+
+
 
 *{
     margin: 0px;
