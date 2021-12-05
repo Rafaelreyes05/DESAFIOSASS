@@ -126,15 +126,12 @@ footer{
     
     .footer__inferior{
         background: $color;
-        display: flex;
-        flex-wrap: wrap;
         color: white;
         min-height: 40vh;
         .footer__info{
-            width: 25%;
             padding: 30px;
             padding-top: 45px;
-            text-align: left;
+            text-align: center;
             h4{
                 font-size: 16px;
                 font-weight: 600;
@@ -182,10 +179,9 @@ footer{
        color: $color;
    }
 
-  
    .footer__info{
-        width: 100%;
-    }
+       text-align: center;
+   }
 
 }
 

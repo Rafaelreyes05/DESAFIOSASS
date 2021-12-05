@@ -113,16 +113,13 @@ footer .footer__superior .texto_superior h2 {
 }
 footer .footer__inferior {
   background: #0078c4;
-  display: flex;
-  flex-wrap: wrap;
   color: white;
   min-height: 40vh;
 }
 footer .footer__inferior .footer__info {
-  width: 25%;
   padding: 30px;
   padding-top: 45px;
-  text-align: left;
+  text-align: center;
 }
 footer .footer__inferior .footer__info h4 {
   font-size: 16px;
@@ -417,7 +414,7 @@ form button {
   }
 
   .footer__info {
-    width: 100%;
+    text-align: center;
   }
 }
 
