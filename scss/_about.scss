@@ -9,11 +9,14 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__texto{
     min-height: 40vh;
     padding: 20px;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: justify;
 }
