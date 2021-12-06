@@ -1,0 +1,53 @@
+/***********************************
+            HEADER 
+ ***********************************/
+
+/*Menu  Navigation*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    position:relative ;
+}
+
+.menu__opcion{
+    text-align: center;
+    padding: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 20%;
+    a:hover{
+        color: $color;
+    }
+}
+
+.active{
+  color:$color;
+}
+
+.icono_menu{
+    width: 100%;
+    padding: 10px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    i{
+        display: none;
+    }
+}
+
+
+/*Logo*/
+.logo {
+    a{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        img{
+            width:350px;
+            height:auto;
+        }
+    }
+}

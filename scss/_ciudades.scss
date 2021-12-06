@@ -1,22 +1,28 @@
 /***********************************
             CIUDADES.HTML 
  ***********************************/
- .ciudad{
+ .ciudades__titulo{
+    padding: 15px;
+}
+ 
+.ciudad{
     display: flex;
     border-top: 0.5px solid rgba(0,0,0,0.2);
     border-bottom: 0.5px solid rgba(0,0,0,0.2);
+    .ciudad__image{
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+    .ciudad__texto{
+        width: 80%;
+        padding: 30px;
+        text-align: justify;
+    }
 }
 
-.ciudad__image{
-    width: 20%;
-}
 
-.ciudad__texto{
-    width: 80%;
-    padding: 30px;
-    text-align: justify;
-}
 
-.ciudades__titulo{
-    padding: 15px;
-}
+
+
