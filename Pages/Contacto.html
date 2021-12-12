@@ -14,19 +14,40 @@
 
 <body class="container-fluid m-0 p-0">
     <header>
-        <nav>
-            <div class="icono_menu"><i class="fas fa-bars"></i></div>
-            <div class="menu">
-                <div class="menu__opcion"><a href="../index.html">Inicio</a></div>
-                <div class="menu__opcion"><a href="Tours.html">Tours</a></div>
-                <div class="menu__opcion"><a href="Ciudades.html">Ciudades</a></div>
-                <div class="menu__opcion"><a href="About.html">Acerca</a></div>
-                <div class="menu__opcion"><a class="active" href="Contacto.html">Contacto</a></div>
-            </div>
-            <div class="logo">
-                <a href="../index.html"><img src="../Images/logotravellapp.png" alt="Travelapp"></a>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+                    <ul class="navbar-nav mb-2 mb-md-0 lista">
+                        <li class="nav-item opcion">
+                            <a class="nav-link active-item" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item opcion">
+                            <a class="nav-link linky" aria-current="page" href="Tours.html">Tours</a>
+                        </li>
+                        <li class="nav-item opcion">
+                            <a class="nav-link" aria-current="page" href="Ciudades.html">Ciudades</a>
+                        </li>
+                        <li class="nav-item opcion">
+                            <a class="nav-link" aria-current="page" href="About.html">Acerca</a>
+                        </li>
+                        <li class="nav-item opcion">
+                            <a class="nav-link" aria-current="page" href="Contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../Images/logotravellapp.png" alt="Travelapp" />
+            </a>
+        </div>
     </header>
     <main class="main__contacto">
         <div class="contenedor__formulario">

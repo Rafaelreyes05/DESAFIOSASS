@@ -3,44 +3,37 @@
  ***********************************/
 
 /*Menu  Navigation*/
-.menu{
+.lista{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    min-width: 100%;
     padding: 20px;
-    position:relative;
-    .menu__opcion{  
-        text-align: center;
-        padding: auto;
-        font-size: $fontsize1;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 20%;
-        a:hover{
-            color: $color;
-        }
-    }
-
-
-
 }
 
-
-
-.active{
-  color:$color;
-}
-
-.icono_menu{
-    width: 100%;
-    padding: 10px 0 0 0;
-    font-size: $fontsize2;
-    font-weight: bold;
+.nav-link{
+    color: black;
     text-transform: uppercase;
+    padding: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.opcion{
+    min-width: 20%;
     text-align: center;
-    i{
-        display: none;
-    }
+}
+
+.nav-link:visited{
+    color: black;
+}
+
+.nav-link:hover{
+    color: #0078c4 !important;
+}
+
+.active-item {
+  color: #0078c4;
 }
 
 

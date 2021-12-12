@@ -38,39 +38,37 @@ body {
             HEADER 
  ***********************************/
 /*Menu  Navigation*/
-.menu {
+.lista {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  min-width: 100%;
   padding: 20px;
-  position: relative;
 }
-.menu .menu__opcion {
-  text-align: center;
+
+.nav-link {
+  color: black;
+  text-transform: uppercase;
   padding: auto;
   font-size: 18px;
   font-weight: bold;
-  text-transform: uppercase;
-  width: 20%;
-}
-.menu .menu__opcion a:hover {
-  color: #0078c4;
 }
 
-.active {
-  color: #0078c4;
-}
-
-.icono_menu {
-  width: 100%;
-  padding: 10px 0 0 0;
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+.opcion {
+  min-width: 20%;
   text-align: center;
 }
-.icono_menu i {
-  display: none;
+
+.nav-link:visited {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #0078c4 !important;
+}
+
+.active-item {
+  color: #0078c4;
 }
 
 /*Logo*/
@@ -417,6 +415,16 @@ form button {
   }
 
   .ciudad__texto {
+    width: 100%;
+  }
+
+  .opcion {
+    min-width: 20%;
+    text-align: left;
+    margin: 0px;
+  }
+
+  .contenedor__formulario {
     width: 100%;
   }
 }
