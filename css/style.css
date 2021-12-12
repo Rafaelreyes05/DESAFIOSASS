@@ -41,11 +41,11 @@ body {
 .menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 20px;
   position: relative;
 }
-
-.menu__opcion {
+.menu .menu__opcion {
   text-align: center;
   padding: auto;
   font-size: 18px;
@@ -53,7 +53,7 @@ body {
   text-transform: uppercase;
   width: 20%;
 }
-.menu__opcion a:hover {
+.menu .menu__opcion a:hover {
   color: #0078c4;
 }
 

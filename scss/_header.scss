@@ -6,21 +6,26 @@
 .menu{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
-    position:relative ;
+    position:relative;
+    .menu__opcion{  
+        text-align: center;
+        padding: auto;
+        font-size: $fontsize1;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 20%;
+        a:hover{
+            color: $color;
+        }
+    }
+
+
+
 }
 
-.menu__opcion{
-    text-align: center;
-    padding: auto;
-    font-size: $fontsize1;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 20%;
-    a:hover{
-        color: $color;
-    }
-}
+
 
 .active{
   color:$color;
