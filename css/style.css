@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 /***********************************
             GENERALES 
  ***********************************/
@@ -8,12 +9,12 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Noto Sans Mono", monospace;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
 }
 
 .button {
   padding: 10px;
-  font-size: 1em;
   background-color: #0078c4;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -30,7 +31,7 @@ a {
 body {
   width: 100%;
   background-color: #ebebeb;
-  color: black;
+  color: #747474;
 }
 
 /***********************************
@@ -47,7 +48,7 @@ body {
 .menu__opcion {
   text-align: center;
   padding: auto;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   width: 20%;
@@ -98,7 +99,7 @@ footer .footer__superior {
   justify-content: center;
 }
 footer .footer__superior .texto_superior h2 {
-  font-size: 30px;
+  font-size: 18px;
 }
 footer .footer__inferior {
   background: #0078c4;
@@ -116,14 +117,13 @@ footer .footer__inferior .footer__info h4 {
   font-weight: 600;
 }
 footer .footer__inferior .footer__info p {
-  font-size: 14px;
   font-weight: 200;
 }
 footer .footer__inferior .footer__info ul {
   padding: 0px;
 }
 footer .footer__inferior .footer__info .iconos {
-  font-size: 30px;
+  font-size: 60px;
 }
 
 /***********************************
@@ -165,7 +165,7 @@ main {
 
 .presentacion__texto {
   text-align: justify;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .presentacion__imagen {
@@ -210,7 +210,7 @@ main {
 }
 
 .card_info h2 {
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .containerVermas {
@@ -254,7 +254,7 @@ main {
 .about__texto {
   min-height: 40vh;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -318,7 +318,6 @@ form textarea {
 }
 form label {
   width: 100%;
-  font-size: 12px;
   text-align: left;
 }
 form button {
@@ -327,7 +326,6 @@ form button {
   background: #0078c4;
   cursor: pointer;
   text-align: center;
-  font-size: 17px;
   font-weight: 300;
   color: white;
   width: 100%;
@@ -380,7 +378,6 @@ form button {
 .text_reservar {
   background-color: #0078c4;
   color: white;
-  font-size: 16px;
   padding: 16px 32px;
 }
 

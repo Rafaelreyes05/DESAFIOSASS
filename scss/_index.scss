@@ -38,7 +38,7 @@ main{
 
 .presentacion__texto{
     text-align: justify;
-    font-size: 1rem;
+    font-size: $fontsize1;
 }
 
 .presentacion__imagen{
@@ -84,7 +84,7 @@ main{
 
 .card_info{ 
     h2{
-        font-size: 1.5rem;
+        font-size: $fontsize1;
     }
 }
 

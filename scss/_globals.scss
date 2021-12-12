@@ -1,5 +1,7 @@
 $color:rgb(0,120,196);
-$fondo:hsl(0, 0%, 92%);
+$fondo:rgb(235, 235, 235);
+$fontsize1:18px;
+$fontsize2:30px;
 
 @mixin medidas ($fontsize,$fontweight) {
     font-size: $fontsize;
@@ -16,12 +18,13 @@ $fondo:hsl(0, 0%, 92%);
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Rubik', sans-serif;
+    font-size: $fontsize1;
+    
 }
 
 .button{
     padding: 10px;
-    font-size: 1em;
     background-color: $color;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -38,5 +41,5 @@ a{
 body{
     width: 100%;
     background-color:$fondo;
-    color: black;
+    color: #747474;;
 }

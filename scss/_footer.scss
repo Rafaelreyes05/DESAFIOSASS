@@ -11,7 +11,7 @@
         align-items: center;
         justify-content: center;
         .texto_superior h2{
-            font-size: 30px;
+            font-size: $fontsize1;
             }
     }
     .footer__inferior{
@@ -27,13 +27,13 @@
                 @include medidas(16px,600)
             }
             p{
-                @include medidas(14px,200)
+                font-weight: 200;
             }
             ul{
                 padding: 0px;
             }
             .iconos{
-                font-size: 30px;
+                font-size: 60px;
             }
         }
     }
