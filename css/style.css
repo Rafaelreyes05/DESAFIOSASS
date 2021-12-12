@@ -315,6 +315,7 @@ form textarea {
   border: none;
   background-color: #EBEBEB;
   height: 60px;
+  resize: none;
 }
 form label {
   width: 100%;
