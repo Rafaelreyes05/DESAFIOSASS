@@ -8,14 +8,17 @@
 @import "contacto";
 @import "tours";
 
-@media screen and (max-width:800px){
+@media screen and (max-width:768px){
     .menu{
        flex-direction: column;
        align-items: center;
+       .menu__opcion{
+        width: 100%;
+       }
    }
 
    .icono_menu i{
-       display:block;
+       display:inline;
    }
 
    .icono_menu:hover{
@@ -26,9 +29,38 @@
        text-align: center;
    }
 
-   .portada__espacio{
-    height: 0vh;
+   .portada{
+    min-height: 50vh;
 }
+
+.tours__verMas{
+    width: 40%;
+}
+
+.ciudad__image{
+    width: 100%;
+}
+.ciudad__texto{
+    width: 100%;
+}
+
+
+}
+
+
+@media screen and (max-width:365px){
+    .logo {
+        a{
+            img{
+                    width:100%;
+                    height:auto;
+                }
+        }
+    }
+    .tours__verMas{
+        width: 80%;
+    }
+
 }
 
 

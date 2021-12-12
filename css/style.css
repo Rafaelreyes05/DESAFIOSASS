@@ -148,10 +148,6 @@ main {
   object-fit: cover;
 }
 
-.portada__espacio {
-  max-height: 20vh;
-}
-
 /*Presentación*/
 .presentacion {
   display: flex;
@@ -269,15 +265,13 @@ main {
   display: flex;
   border-top: 0.5px solid rgba(0, 0, 0, 0.2);
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
-}
-.ciudad .ciudad__image {
-  width: 20%;
+  align-items: center;
 }
 .ciudad .ciudad__image img {
   width: 100%;
+  object-fit: cover;
 }
 .ciudad .ciudad__texto {
-  width: 80%;
   padding: 30px;
   text-align: justify;
 }
@@ -389,14 +383,17 @@ form button {
   opacity: 0.3;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .menu {
     flex-direction: column;
     align-items: center;
   }
+  .menu .menu__opcion {
+    width: 100%;
+  }
 
   .icono_menu i {
-    display: block;
+    display: inline;
   }
 
   .icono_menu:hover {
@@ -407,8 +404,30 @@ form button {
     text-align: center;
   }
 
-  .portada__espacio {
-    height: 0vh;
+  .portada {
+    min-height: 50vh;
+  }
+
+  .tours__verMas {
+    width: 40%;
+  }
+
+  .ciudad__image {
+    width: 100%;
+  }
+
+  .ciudad__texto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 365px) {
+  .logo a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tours__verMas {
+    width: 80%;
   }
 }
 
